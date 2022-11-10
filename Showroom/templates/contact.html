@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if msgs %}
+<p style="color:red;">{{ msgs }} </p>
+{% endif %}
+		<form class="contactForm" method="post">
+            {% csrf_token %}
+			<label>
+				<h2 align="center">Contact Us:</h2>
+			</label>
+			<label>
+				<span>Your Name:</span>
+				<input type="text" name="name" required>
+			</label>
+
+			<label>
+				<span>Email: </span>
+				<input type="text" name="email" required>
+
+			</label>
+
+			<label>
+				<span>Message:</span>
+				<textarea type="text" name="msg" required> </textarea>
+
+			</label>
+
+			<label>
+				<input type="submit" value="Submit">
+			</label>
+		</form>
+{% endblock %}

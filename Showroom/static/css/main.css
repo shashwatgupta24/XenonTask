@@ -1,0 +1,187 @@
+*{
+    margin: 0px;
+    padding:0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+a{text-decoration: none;}
+ul{list-style-type: none;}
+.header{
+    background-color: #aaa;
+    display: flex;
+    justify-content: left;
+    overflow: auto;
+}
+
+.logo, .nm{
+    padding: 20px;
+}
+.nm{
+    padding-top:120px;
+    font-size: 50px;
+    line-height: 10px;
+}
+.nm h1{line-height: 100px;}
+.nm span{font-size: 20px;}
+.logo img{
+    width :400px; 
+	height: 450px;
+    border-radius: 40px;
+}
+
+.loginbtn{
+    position:absolute;
+    top:10px;
+    right:20px;
+}
+.loginbtn button{
+    border:none;
+    font-size: 15px;
+    padding:5px 30px;
+    border-radius: 12px;
+}
+.nav{
+    background-color: #ddd;
+}
+.nav ul li{
+    border-bottom: 2px solid transparent;
+    display: inline-block;
+    padding:10px 30px;
+}
+.nav li:hover{
+    transition: .35s ease-in-out;
+    border-bottom-color: #aaa;
+}
+.active{
+    color:brown;
+    border-bottom-color: #aaa;
+}
+
+.section{
+    padding:30px;
+}
+.container{
+    overflow: auto;
+    padding:5px;
+    width: 100%;
+    border-radius: 6px;
+    background-color: #aaa;
+    margin-bottom: 10px;
+}
+
+.box{
+    float: left;
+}
+.container img{
+    height: 200px;
+    width:200px;
+    border-radius: 12px;
+    margin:5px;
+}
+
+.buybutton{
+    position:relative;
+    left:0px;
+    bottom: 0px;
+    border:1px solid transparent;
+    padding:10px 30px;
+    border-radius: 12px;
+}
+.buybutton:hover{
+    background-color: #aaa;
+    border-color:#ddd;
+    transition: 0.5s ease;
+}
+
+.footer{
+    background-color: #aaa;
+    padding:10px;
+}
+.shortcuts{
+    display:flex;
+    overflow: auto;
+    place-items: top;
+}
+.shortcuts div{
+    padding:20px;
+}
+.info{
+    width: 500px;
+}
+.info img{
+    height: 150px;
+    width: 150px;
+}
+.copyright{
+    border-top: 1px solid white;
+    padding:10px 0px 0px 0px;
+}
+
+input, textarea{
+    outline: none;
+    border:none;
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 18px;
+    padding:5px 0px 5px 5px;
+    border-radius: 6px;
+}
+textarea{
+    height: 200px;
+}
+.contactForm{
+    padding:20px;
+    background-color: #ddd;
+    width:100%;
+    border-radius: 12px;
+}
+form h2{
+    border-bottom: 1px solid white;
+    margin-bottom: 30px;
+}
+.contactForm span{
+    display: block;
+}
+form input[type=submit]{
+    width: 200px;
+    background-color:rgba(99, 237, 99, 0.964);
+}
+
+.loginForm{
+    margin-left: 300px;
+    width: 500px;
+    background-color: #ddd;
+    padding:30px;
+    border-radius: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+    .header{
+        display: block;
+    }
+    .logo img{
+        width :100%; 
+        height: 100%;
+        border-radius: 40px;
+    }
+    .nm{
+        padding-top: 0px;
+        font-size: 26px;
+        line-height: 20px;
+    }
+    .container img{
+        width:100%;
+    }
+    .shortcuts{
+        display:block;
+        overflow: auto;
+    }
+    .loginForm{
+        margin-left: 0px;
+        width: 100%;
+        background-color: #ddd;
+        padding:20px;
+        border-radius: 12px;
+    }
+    .nm h1{line-height: 50px;}
+  }

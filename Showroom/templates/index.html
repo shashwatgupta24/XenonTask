@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for product in products %}
+        <div class="container">
+            <div class="box">
+                <img src="{{ product.image.url }}" height="400" width="400" style="float: left;">
+            </div>
+            <div class="detailsbox">
+                <p>{{ product.name }}</p><br>
+                <p>{{ product.price }}Rs/-</p><br>
+                <p>{{ product.description }}</P>
+                </div>
+                <button type="button" value="Buy Now" class="buybutton">Buy Now</button>    
+        </div>
+    {% endfor %}
+{% endblock %}
